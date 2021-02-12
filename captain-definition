@@ -1,0 +1,4 @@
+{
+  "schemaVersion": 2,
+  "dockerfilePath" : "./10.5/debian-10/Dockerfile"
+}
