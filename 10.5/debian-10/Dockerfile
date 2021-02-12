@@ -17,7 +17,8 @@ RUN . /opt/bitnami/scripts/libcomponent.sh && component_unpack "gosu" "1.12.0-2"
 RUN chmod g+rwX /opt/bitnami
 RUN mkdir /docker-entrypoint-initdb.d
 
-COPY rootfs /
+# COPY rootfs /
+COPY ./10.5/debian-10/rootfs /
 RUN /opt/bitnami/scripts/mariadb/postunpack.sh
 ENV BITNAMI_APP_NAME="mariadb" \
     BITNAMI_IMAGE_VERSION="10.5.8-debian-10-r74" \
